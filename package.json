@@ -2,6 +2,7 @@
   "name": "adopt-me",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://edirestrepo.github.io/Adopt-me/",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -10,7 +11,9 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src/dist"
+
   },
   "keywords": [],
   "author": "",
